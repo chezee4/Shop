@@ -4,6 +4,8 @@ export const Context = createContext(null);
 
 export const ContextProvider = ({ children }) => {
     const [burgerActive, setBurgerActive] = useState(false);
+    const [products, setProducts] = useState([]);
+    const [data, setData] = useState([]);
 
     return (
       <Context.Provider
