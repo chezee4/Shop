@@ -2,7 +2,8 @@
 
 body {
   font-family: "DM Sans", sans-serif;
-  background-color: #fffcf9;
+  background-color: #454544;
+  color: #ffffff;
   min-height: 100vh;
   position: relative;
 }
@@ -23,19 +24,19 @@ main {
   & .rc-slider-handle {
     width: 3px;
     height: 13px;
-
-    background-color: #000000;
-    border: solid 2px #000000 !important;
+    padding: 5px;
+    background-color: #aaaaaa;
+    border-color: #7d7d7d !important;
     border-radius: 10px;
     box-shadow: none !important;
     opacity: 1;
   }
   & .rc-slider-track {
-    background-color: #000000;
+    background-color: #353535;
   }
 
   & .rc-slider-rail {
-    background: #d8d8d8;
+    background: #cccbcb;
   }
 }
 .item-enter {

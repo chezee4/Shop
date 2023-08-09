@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
 
 export const ProductContainer = styled.div`
-  min-height:200px;
   cursor: pointer;
+  background-color: #202020;
   transition:all 0.4s linear;
   &:hover{
     transform:translateY(-5px);
@@ -23,4 +23,8 @@ export const Price = styled.span`
   font-weight: 500;
   line-height:  130% ;
   text-transform: capitalize;
+`;
+
+export const Text = styled.div`
+  padding: 10px 0px 30px 10px;
 `;

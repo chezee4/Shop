@@ -26,14 +26,14 @@ export const NavList = styled.ul`
       width: 12em;
       height: 100%;
       transition: all 0.5s ease;
-      background-color: rgb(117, 117, 117);
+      background-color: rgb(40 38 31);
  }
  @media (max-width: 480px){
       flex-direction: column;
       color: wheat;
       width:100%;
       transition: all 0.5s ease;
-      background-color: rgb(117, 117, 117);
+      background-color: rgb(40 38 31);
  }
     
 
@@ -45,6 +45,7 @@ export const NavItem = styled.li`
   font-style: normal;
   font-weight: 500;
   line-height: 168.75%;
+  transition: all 0.2s linear;
   cursor: pointer;
   &:not(:last-child){
     margin-right: 50px;
@@ -75,12 +76,17 @@ export const NavItem = styled.li`
     left: 50%;
     transform: translateX(-50%);
     display: inline-block;
-    background: #000000;
+    background: #e8ce78;
     transition: all 0.2s linear;
     width: 0;
     height: 2px;
   }
-  &:hover::before {
+  &:hover{
+    color: #e8ce78;
+
+   &::before {
     width: 40px;
   }
+  }
+    
 `;

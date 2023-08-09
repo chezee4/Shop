@@ -9,5 +9,6 @@ export const СontainerLodo = styled.div`
 
 export const LogoCO = styled.img`
   width:100%;
+  filter: invert(1);
   height: 100%;
 `;

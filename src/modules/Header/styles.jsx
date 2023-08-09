@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 
 export const HeaderWrapper = styled.div`
   width: 100%;
+  background-color: #414039;
   border-bottom: 1px solid#D8D8D8;
 `;
 export const HeaderContainer = styled.div`
@@ -27,7 +28,7 @@ export const Content = styled.nav`
       width: 12em;
       height: 100%;
       transition: all 0.5s ease;
-      background-color: rgb(117, 117, 117);
+      background-color: rgb(40 38 31);
     }
   }
 `;

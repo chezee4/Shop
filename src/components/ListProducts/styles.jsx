@@ -10,7 +10,8 @@ export const Grid = styled.div`
   margin-bottom:35px;
   & > div {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content:center;
     grid-gap: 60px 15px;
   }
 `;

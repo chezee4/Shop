@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import {Link} from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import useShopService from "../../API/products";
 import { Grid, ContainerList, ButtonLoading, ButtonText } from "./styles";
@@ -52,7 +53,9 @@ const ListProducts = () => {
       <TransitionGroup>
         {visibleProducts.map((product) => (
           <CSSTransition key={product.id} timeout={500} classNames="item">
+            <Link to={`/product/${product.id}`}>
             <Product product={product} />
+            </Link>
           </CSSTransition>
         ))}
       </TransitionGroup>

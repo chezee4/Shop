@@ -20,13 +20,18 @@ export const ContainerIconSerach = styled.button`
   background-color: transparent;
 `;
 export const Input = styled.input`
-  height: 35px;
-  font-size: 15px;
-  border-bottom: 1px solid #D8D8D8;
-  color: #070707;
-  outline: none;
-  width: 100%;
-  transition: all ease 0.3s;
-  background-color: #fffcf9;
-  cursor: pointer;
+    font-size: 16px;
+    border-bottom: 1px solid #ffffff;
+    color: #fbfae6;
+    outline: none;
+    padding: 10px 0px 10px 0px;
+    padding-inline: 10px 31px;
+    width: 100%;
+    transition: all ease 0.3s;
+    background-color: transparent;
+    box-shadow: 0px 0px 0.5px 0px #000;
+    cursor: pointer;
+    &::placeholder{
+      color: #bdbcad;
+    }
 `;

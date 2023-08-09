@@ -26,7 +26,7 @@ export const Input = styled.input`
   outline: none;
   width: 35px;
   transition: all ease 0.3s;
-  background-color: #ffffff;
+  background-color: transparent;
   border-radius: 50px;
   cursor: pointer;
   @media (max-width: 480px) {
