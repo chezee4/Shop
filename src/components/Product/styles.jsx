@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 
 export const ProductContainer = styled.div`
-  max-width: 300px;
   min-height:200px;
   cursor: pointer;
   transition:all 0.4s linear;
@@ -11,10 +10,12 @@ export const ProductContainer = styled.div`
   
 `;
 export const TitleProduct = styled.h4`
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom:10px;
-  line-height: 130%;
+    font-size: 20px;
+    width: 300px;
+    word-break: break-word;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 130%;
 `;
 
 export const Price = styled.span`

@@ -1,20 +1,32 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import useShopService from "../../API/products";
 import { Grid, ContainerList, ButtonLoading, ButtonText } from "./styles";
 import Product from "../Product";
-import loadingSVG from "./loadingList.svg"; 
+import loadingSVG from "./loadingList.svg";
+import { Context } from "../../utils/context";
+import Spinner from "../../UI/Spinner";
+
 const ListProducts = () => {
   const { getAllProducts } = useShopService();
-  const [products, setProducts] = useState([]);
-  const [data, setData] = useState([]);
-  const [lastFetch, setLastFetch] = useState(false);
+  const {
+    setProducts,
+    visibleProducts,
+    data,
+    setData,
+    lastFetch,
+    setLastFetch,
+  } = useContext(Context);
   const [lengthProducts, setLengthProducts] = useState(9);
-  
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     (async () => {
+      setLoading(true);
       const data = await getAllProducts();
       setData(data);
       setProducts(data.slice(0, 9));
+      setLoading(false);
     })();
     // eslint-disable-next-line
   }, []);
@@ -34,18 +46,35 @@ const ListProducts = () => {
       ]);
     }
   };
+  const View = () => {
+     return(
+      <>
+      <TransitionGroup>
+        {visibleProducts.map((product) => (
+          <CSSTransition key={product.id} timeout={500} classNames="item">
+            <Product product={product} />
+          </CSSTransition>
+        ))}
+      </TransitionGroup>
+      <ButtonLoading
+        lastFetch={lastFetch}
+        onClick={() => loadMoreItems()}
+      >
+        <img src={loadingSVG} alt="loading" />
+        <ButtonText>More</ButtonText>
+      </ButtonLoading>
+    </>
+     )
+  }
+  const spinner = loading ? <Spinner /> : null;
+  const elements = !spinner ? visibleProducts.length ? View() : <p>Такого товару немає в наявності, вибачте.</p> : null;
 
   return (
     <ContainerList>
       <Grid>
-        {products.map((product) => (
-          <Product product={product} key={product.id} />
-        ))}
+        {spinner}
+        {elements}
       </Grid>
-      <ButtonLoading lastFetch={lastFetch} onClick={() => loadMoreItems()}>
-        <img src={loadingSVG} alt="loading" />
-        <ButtonText>More</ButtonText>
-      </ButtonLoading>
     </ContainerList>
   );
 };

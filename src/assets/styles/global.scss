@@ -1,11 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap");
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
+  background-color: #fffcf9;
+  min-height: 100vh;
+  position: relative;
+}
+#root{
+  min-height: inherit;
+  position: relative;
+}
+#root>svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
 }
 main {
   display: flex;
-    flex: 1 1 auto;
+  flex: 1 1 auto;
+  & .rc-slider-handle {
+    width: 3px;
+    height: 13px;
+
+    background-color: #000000;
+    border: solid 2px #000000 !important;
+    border-radius: 10px;
+    box-shadow: none !important;
+    opacity: 1;
   }
- 
+  & .rc-slider-track {
+    background-color: #000000;
+  }
+
+  & .rc-slider-rail {
+    background: #d8d8d8;
+  }
+}
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 200ms linear;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 200ms linear;
+}

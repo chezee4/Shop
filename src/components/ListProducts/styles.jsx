@@ -5,12 +5,14 @@ export const ContainerList = styled.div`
 `;
 
 export const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 60px 30px;
-  width: 100%;
+  margin-left: auto;
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom:35px;
+  & > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 60px 15px;
+  }
 `;
 
 const spinAnimation = keyframes`
@@ -32,6 +34,7 @@ export const ButtonLoading = styled.button`
   align-items: center;
   cursor: pointer;
   margin: 0 auto;
+  margin-top: 60px;
   & img {
     width: 35px;
     height: 35px;

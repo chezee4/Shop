@@ -7,7 +7,7 @@ import { HeaderContainer, Content, HeaderWrapper } from "./styles";
 import Menu from "../../components/Menu";
 import Burger from "../../components/Burger";
 import { Context } from "../../utils/context";
-const Header = () => {
+const AppHeader = () => {
   const { burgerActive } = useContext(Context);
   return (
     <HeaderWrapper>
@@ -23,4 +23,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AppHeader;

@@ -4,7 +4,6 @@ export const ImgContainer = styled.div`
   display:flex; 
   justify-content: center;
   align-items:center;
-  max-width: 200px;
   min-height: 200px;
   margin-bottom:20px;
 `;

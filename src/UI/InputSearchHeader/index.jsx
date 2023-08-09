@@ -5,7 +5,7 @@ import { Icon } from "../Icons/styles";
 
 import search from "../../assets/img/search.svg";
 
-const InputSearch = () => {
+const InputSearchHeader = () => {
   return (
     <Search>
       <Input
@@ -21,4 +21,4 @@ const InputSearch = () => {
   );
 };
 
-export default InputSearch;
+export default InputSearchHeader;

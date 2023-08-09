@@ -1,15 +1,26 @@
 import React from "react";
-import Header from "../../modules/Header";
 import Layout from "../../Layout";
 import { ContextProvider } from "../../utils/context";
 import ListProducts from "../../components/ListProducts";
+import { HomeMain } from "./styles";
+import FilterSide from "../../modules/FilterSide";
+import ErrorBoundary from "../../components/ErrorBoundary";
+import AppHeader from "../../modules/Header";
 const HomePage = () => {
   return (
     <ContextProvider>
-      <Header />
+        <ErrorBoundary>
+            <AppHeader />
+          </ErrorBoundary>
       <Layout>
-        <main><aside style={{minHeight:"100vh", minWidth:"20%"}}>dd</aside><ListProducts/></main>
-        <footer>dwd</footer>
+        <HomeMain>
+          <ErrorBoundary>
+            <FilterSide />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <ListProducts />
+          </ErrorBoundary>
+        </HomeMain>
       </Layout>
     </ContextProvider>
   );

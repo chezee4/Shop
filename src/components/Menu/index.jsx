@@ -1,7 +1,7 @@
 import React from "react";
 
 import { MenuList, MenuItem } from "./styles";
-import InputSearch from "../../UI/InputSearch";
+import InputSearchHeader from "../../UI/InputSearchHeader";
 import { Icon } from "../../UI/Icons/styles";
 
 import cart from "../../assets/img/cart.svg";
@@ -10,7 +10,7 @@ const Menu = () => {
   return (
     <MenuList>
       <MenuItem>
-        <InputSearch />
+        <InputSearchHeader />
       </MenuItem>
       <MenuItem><Icon src={cart} alt="cart"/></MenuItem>
       <MenuItem><Icon src={user} alt="user"/></MenuItem>
