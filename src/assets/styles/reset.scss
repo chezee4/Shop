@@ -24,3 +24,6 @@ input,
 button {
   font: inherit;
 }
+input[type=radio]{
+  display: none;
+}

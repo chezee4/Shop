@@ -1,14 +1,18 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import {СontainerLodo, LogoCO} from "./styles";
+import { СontainerLodo, LogoCO } from "./styles";
 
-import logo from "../../assets/img/Logo.svg" 
+import logo from "../../assets/img/Logo.svg";
+
 const Logo = () => {
-    return (
-        <СontainerLodo>
-            <LogoCO src={logo} alt='Logo Company'/>
-        </СontainerLodo>
-    );
+  return (
+    <Link to="/">
+      <СontainerLodo>
+        <LogoCO src={logo} alt="Logo Company" />
+      </СontainerLodo>
+    </Link>
+  );
 };
 
 export default Logo;
