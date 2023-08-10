@@ -15,7 +15,7 @@ const CartPage = lazy(() => import("../../pages/СartPage"));
 function App() {
   return (
     <ContextProvider>
-      <Router basename="/">
+      <Router basename="/Shop">
         <ErrorBoundary>
           <AppHeader />
         </ErrorBoundary>
