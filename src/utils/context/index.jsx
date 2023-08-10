@@ -8,6 +8,7 @@ export const ContextProvider = ({ children }) => {
   const [data, setData] = useState([]);
   const [products, setProducts] = useState([]);
   const [visibleProducts, setVisibleProducts] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
   const filterProducts = (value) => {
     let elements;
     if (value) {
@@ -52,6 +53,8 @@ export const ContextProvider = ({ children }) => {
         data,
         lastFetch,
         setLastFetch,
+        setCartItems,
+        cartItems
       }}
     >
       {children}

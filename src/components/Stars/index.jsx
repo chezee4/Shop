@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { StarsContainer,Label, Fastar } from "./styles";
 
-const Stars = () => {
-  const [rating, setRating] = useState(null);
+const Stars = ({rate}) => {
+  const [rating, setRating] = useState(rate);
   const [hover, setHover] = useState(null);
 
   return (

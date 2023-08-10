@@ -11,7 +11,7 @@ import { Main } from "./styles";
 import Layout from "../../Layout";
 const HomePage = lazy(() => import("../../pages/HomePage"));
 const ProductPage = lazy(() => import("../../pages/ProductPage"));
-
+const CartPage = lazy(() => import("../../pages/СartPage"));
 function App() {
   return (
     <ContextProvider>
@@ -25,6 +25,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/product/:productId" element={<ProductPage />} />
+                <Route path="/cart" element={<CartPage />} />
               </Routes>
             </Suspense>
           </Main>
