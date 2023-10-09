@@ -20,7 +20,6 @@ const Menu = () => {
   useEffect(() => {
     setCurrentProducts(cartItems.reduce((sumItems, currentItem) => sumItems + currentItem.count, 0));
   },[cartItems])
-  
   return (
     <MenuList>
       <MenuItem>

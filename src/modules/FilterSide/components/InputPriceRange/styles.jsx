@@ -8,25 +8,29 @@ export const Price = styled.span`
   font-style: normal;
   font-weight: 400;
   line-height: 157.143%;
-  color: #fbfad3;
+  color: #000000;
 
 `;
 export const FlexPrice = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top:20px;
 `;
 export const ButtonPriceFilter = styled.button`
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 157.143%;
-  padding:15px 10px;
-  background-color:transparent;
-  color: #c0bc5a;
+      font-size: 17px;
+    font-weight: 400;
+    line-height: 157.143%;
+    padding: 1px 10px;
+    background-color: #d17a00;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s linear;
 
   cursor: pointer;
   transition: all 0.2s linear;
   &:hover{
-    color:#cea51c;
+    background-color: #e4921e;
   }
 `;

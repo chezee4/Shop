@@ -10,7 +10,7 @@ export const ContainerIconSerach = styled.button`
   position: absolute;
   width: 35px;
   height: 35px;
-  top: 0;
+  top: 2px;
   right: 0;
   padding: 8px;
    transition: all 0.25s linear;
@@ -22,7 +22,7 @@ export const ContainerIconSerach = styled.button`
 export const Input = styled.input`
     font-size: 16px;
     border-bottom: 1px solid #ffffff;
-    color: #fbfae6;
+    color: #303028;
     outline: none;
     padding: 10px 0px 10px 0px;
     padding-inline: 10px 31px;
@@ -32,6 +32,6 @@ export const Input = styled.input`
     box-shadow: 0px 0px 0.5px 0px #000;
     cursor: pointer;
     &::placeholder{
-      color: #bdbcad;
+      color: #525144;
     }
 `;

@@ -4,7 +4,7 @@ import { StarsContainer,Label, Fastar } from "./styles";
 const Stars = ({rate}) => {
   const [rating, setRating] = useState(rate);
   const [hover, setHover] = useState(null);
-
+   console.log("Stars");
   return (
     <StarsContainer>
       {[...Array(5)].map((star, index) => {

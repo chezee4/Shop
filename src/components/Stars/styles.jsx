@@ -14,7 +14,7 @@ export const Label = styled.label``;
 
 export const Fastar = styled(FaStar)`
   transition: all 0.15s linear;
-
+  color:#e9d6ae;
   font-size: 30px;
   color: ${(props) =>
     props.currentRating <= props.rating

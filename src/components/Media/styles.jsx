@@ -12,9 +12,5 @@ export const IconProduct = styled.div`
     cursor: pointer;
     transition: all 0.25s linear;
     font-size: 28px;
-    filter: invert(0) drop-shadow(1px 2px 6px black);
-  }
-  &:hover svg {
-   filter: invert(0.4) drop-shadow(1px 2px 3px  black);
   }
 `;

@@ -54,7 +54,7 @@ export const ProductDescr = styled.p`
 export const ProductPrice = styled.span`
   display: inline-block;
   font-size: 43px;
-  color: #fbfad3;
+  color: #d6b94e;
   font-weight: 500;
   line-height: 130%;
   text-transform: capitalize;
@@ -86,7 +86,8 @@ export const ContainerAddProduct = styled.div`
 export const AddButtonProduct = styled.button`
   cursor: pointer;
   padding: 15px 60px;
-  background-color: wheat;
+  background-color: #fad692;
+  font-weight:500;
   transition: all 0.2s linear;
   &:hover {
     background-color: #dcb66e;

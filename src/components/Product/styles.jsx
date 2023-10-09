@@ -3,7 +3,9 @@ import { styled } from "styled-components";
 export const ProductContainer = styled.div`
   cursor: pointer;
   background-color: #202020;
-  transition:all 0.4s linear;
+  border: 1px solid #202020;
+  color:#ffffff;
+  transition:all 0.25s linear;
   &:hover{
     transform:translateY(-5px);
   }
