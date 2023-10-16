@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/Shop/static/css/main.79838640.css",
-    "main.js": "/Shop/static/js/main.d276d809.js",
+    "main.css": "/Shop/static/css/main.21a9e6d0.css",
+    "main.js": "/Shop/static/js/main.3a0c9b90.js",
     "static/css/450.d11b0c0e.chunk.css": "/Shop/static/css/450.d11b0c0e.chunk.css",
-    "static/js/450.226ac098.chunk.js": "/Shop/static/js/450.226ac098.chunk.js",
-    "static/js/586.223cb808.chunk.js": "/Shop/static/js/586.223cb808.chunk.js",
-    "static/js/318.906e3414.chunk.js": "/Shop/static/js/318.906e3414.chunk.js",
+    "static/js/450.f7c2877a.chunk.js": "/Shop/static/js/450.f7c2877a.chunk.js",
+    "static/js/586.8b16b75d.chunk.js": "/Shop/static/js/586.8b16b75d.chunk.js",
+    "static/js/318.48dff634.chunk.js": "/Shop/static/js/318.48dff634.chunk.js",
     "static/js/528.27625cbf.chunk.js": "/Shop/static/js/528.27625cbf.chunk.js",
     "static/js/615.988f8381.chunk.js": "/Shop/static/js/615.988f8381.chunk.js",
     "static/media/Logo.svg": "/Shop/static/media/Logo.b5ff6213da1cee71f89e65d433a40a13.svg",
@@ -14,17 +14,17 @@
     "static/media/cart.svg": "/Shop/static/media/cart.dc932fd9ab597f6621b3c46ac9074b35.svg",
     "index.html": "/Shop/index.html",
     "static/media/loadingList.svg": "/Shop/static/media/loadingList.fc79130064dfcfcd736449a8c4b34460.svg",
-    "main.79838640.css.map": "/Shop/static/css/main.79838640.css.map",
-    "main.d276d809.js.map": "/Shop/static/js/main.d276d809.js.map",
+    "main.21a9e6d0.css.map": "/Shop/static/css/main.21a9e6d0.css.map",
+    "main.3a0c9b90.js.map": "/Shop/static/js/main.3a0c9b90.js.map",
     "450.d11b0c0e.chunk.css.map": "/Shop/static/css/450.d11b0c0e.chunk.css.map",
-    "450.226ac098.chunk.js.map": "/Shop/static/js/450.226ac098.chunk.js.map",
-    "586.223cb808.chunk.js.map": "/Shop/static/js/586.223cb808.chunk.js.map",
-    "318.906e3414.chunk.js.map": "/Shop/static/js/318.906e3414.chunk.js.map",
+    "450.f7c2877a.chunk.js.map": "/Shop/static/js/450.f7c2877a.chunk.js.map",
+    "586.8b16b75d.chunk.js.map": "/Shop/static/js/586.8b16b75d.chunk.js.map",
+    "318.48dff634.chunk.js.map": "/Shop/static/js/318.48dff634.chunk.js.map",
     "528.27625cbf.chunk.js.map": "/Shop/static/js/528.27625cbf.chunk.js.map",
     "615.988f8381.chunk.js.map": "/Shop/static/js/615.988f8381.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79838640.css",
-    "static/js/main.d276d809.js"
+    "static/css/main.21a9e6d0.css",
+    "static/js/main.3a0c9b90.js"
   ]
 }
